@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<div>
+    {% include 'navbar.html'%}
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9 mt-3 ms-5 ps-2 p-1">
+            <h1>Welcome to Realtime News</h1>
+            <hr>
+            <p>We bring you the entire globe within your reach by unveiling the happenings on both global and local scale. Stay tunned to our site to get up to speed with the <i><b>Realtime News</b></i> as they unfold.
+            </p>
+            <img class="w-100" src="{{url_for('static',filename='assets/favnews.jpg')}}" alt="Broadcast network Image">
+
+            {%include 'headlines.html'%}
+            {%include 'local.html'%}
+        </div>
+        <div class="col-2 mt-5">
+            <h4>News Sources</h4>
+            {%include 'sources.html'%}
+        </div>
+    </div>
+</div>
+{% endblock %}
