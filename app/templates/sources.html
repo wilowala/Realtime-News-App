@@ -1,0 +1,15 @@
+{%block styles%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/sources.css')}}">
+{%endblock%}
+
+{%for response in sources %}
+<div class="card" style="width: 15rem; margin: 0.25rem;">
+    <div class="card-body text">
+        <p class="card-text">
+        <h4>{{response['name']}}</h4>
+        <p>{{response['description']}}</p>
+        <p><a class='view'href="{{response['url']}}">View Articles</a></p>
+        </p>
+    </div>
+</div>
+{%endfor%}
