@@ -1,0 +1,14 @@
+.text{
+    background-color: #FFFCF2;
+    border-color: #FFFCF2;
+    color: #252422;
+}
+
+.view{
+    color: #252422;
+    text-decoration: underline;
+}
+
+.view:hover{
+    color: #CCC5B9;
+}
